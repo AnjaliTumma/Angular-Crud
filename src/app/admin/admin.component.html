@@ -1,0 +1,77 @@
+<div class="nav">
+    <button (click)="showForm()">Add Customer</button>
+    <button (click)="show1=!show">show customer</button>
+    <button (click)="logout()">Logout</button>
+</div>
+<div class="body1" [ngStyle]="{'display':show ? 'block' : 'none'}">
+    <h1 style="text-align: center; margin-top: 10px;">Customer Details</h1>
+    <form [formGroup]="fb" (ngSubmit)="addCustomer()">
+        <input type="text" placeholder="Enter Name" formControlName="name">
+        <input type="email" placeholder="Enter Mail ID" formControlName="email">
+        <input type="number" placeholder="Enter Mobile Number" formControlName="mobile">
+        <input type="text" placeholder="Enter Address" formControlName="address">
+        <input type="number" placeholder="Enter Pincode Number" formControlName="pincode">
+        <input type="date" formControlName="date">
+        <select formControlName="categories">
+            <option>-- Select Categories --</option>
+            <option>Dresses</option>
+            <option>Sarees</option>
+            <option>Tops</option>
+            <option>Jeans</option>
+            <option>Kurtis</option>
+            <option>Jackets</option>
+        </select>
+        <input type="number" placeholder="Enter Height" formControlName="height">
+        <input type="number" placeholder="Enter Width" formControlName="width">
+        <input type="number" placeholder="Enter Neck Size" formControlName="neck">
+        <input type="number" placeholder="Enter Bottom Size" formControlName="bottom">
+        <input type="number" placeholder="Enter Sleves Size" formControlName="sleves">
+        <input type="number" placeholder="Enter Shoulder Size" formControlName="shoulder">
+        <input type="number" placeholder="Enter Qty " formControlName="qty">
+        <input type="number" placeholder="Amount" formControlName="amount">
+        <input type="submit" value={{title}}>
+    </form>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email Id</th>
+            <th>Mobile Number</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Date</th>
+            <th>Categories</th>
+            <th>Height</th>
+            <th>Width</th>
+            <th>Neck Size</th>
+            <th>Bottom Size</th>
+            <th>Sleves Size</th>
+            <th>Shoulder Size</th>
+            <th>Qty</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customerArr">
+            <td>{{customer.name}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.mobile}}</td>
+            <td>{{customer.address}}</td>
+            <td>{{customer.pincode}}</td>
+            <td>{{customer.date | date}}</td>
+            <td>{{customer.categories}}</td>
+            <td>{{customer.height}}</td>
+            <td>{{customer.width}}</td>
+            <td>{{customer.neck}}</td>
+            <td>{{customer.bottom}}</td>
+            <td>{{customer.sleves}}</td>
+            <td>{{customer.shoulder}}</td>
+            <td>{{customer.qty}}</td>
+            <td>{{customer.amount }}</td>
+            <td><button (click)="editCustomer(customer.id)">Edit</button>
+            <button (click)="deleteCustomer(customer.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table> 

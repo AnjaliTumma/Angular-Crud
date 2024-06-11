@@ -1,0 +1,102 @@
+.nav{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    background-color:crimson;
+}
+.nav button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    margin-left:1rem;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    margin-right: 1rem;
+    border-radius: 10px;
+    background-color: black;
+}
+.body1{
+    position: absolute;
+    top: 12%;
+    background-color: white;
+    box-shadow: 0px 0px 8px black;
+    width: 95%;
+    left: 2%;
+    height: 360px;
+}
+
+.body1 form input{
+    width: 230px;
+    height: 40px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.body1 form select{
+    width: 230px;
+    height: 40px;
+    margin-left: 1rem;
+}
+.body1 form input[type=submit]{
+    width: 150px;
+    height: 50px;
+    background-color: crimson;
+    color: white;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    margin-top: 1.5rem;
+    margin-left: 33rem;
+    border-radius: 10px;
+}
+
+table{
+    position: absolute;
+    top: 75%;
+    left: 0.5%;
+    width: 99%;
+    height: auto;
+    margin-bottom: 3rem;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+table thead{
+    text-align: center;
+    height: 50px;
+    background-color: rgba(220, 20, 60, 0.5);
+}
+table tbody{
+    color: black;
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+table,th,td{
+    border: 1px solid black;
+}
+button:nth-child(odd){
+    width: 70px;
+    height: 30px;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: crimson;
+}
+button:nth-child(even){
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: red;
+}

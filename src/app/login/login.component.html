@@ -1,0 +1,14 @@
+<div class="box">
+    <img src="https://thumbs.dreamstime.com/b/pink-plain-simple-gradient-background-use-as-backdrop-design-layouts-text-images-pink-plain-simple-gradient-153964106.jpg">
+    <div class="login">
+        <form [formGroup]="fb" (ngSubmit)="onLogin()">
+            <h1>LOGIN HERE...</h1>
+            <input type="text" placeholder="Enter Username" formControlName="username">
+            <input type="password" placeholder=" Enter Password" formControlName="password">
+            <input type="submit" value="LogIn">
+            <p>Don't have an account? 
+                <a routerLink>Register</a></p>
+        </form>
+    </div>
+
+</div>

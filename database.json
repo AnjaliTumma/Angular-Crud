@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "username": "user1@gmail.com",
+      "password": "user1@123",
+      "id": "f7d6"
+    },
+    {
+      "username": "Anju@gmail.com",
+      "password": "Anju@123",
+      "id": "716e"
+    },
+    {
+      "username":"tummaanju@gmail.com",
+      "password":"Anju@1234"
+    }
+  ],
+  "Customers": [
+    {
+      "name": "Shweta",
+      "email": "shweta@gmail.com",
+      "mobile": 7066007441,
+      "address": "Pune",
+      "pincode": 413006,
+      "date": "2024-02-09",
+      "categories": "Jackets",
+      "height": 30,
+      "width": 100,
+      "neck": 10,
+      "bottom": 5,
+      "sleves": 5,
+      "shoulder": 10,
+      "qty": 2,
+      "amount": 1000,
+      "id": "13ed"
+    }
+  ]
+}
